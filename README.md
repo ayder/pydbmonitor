@@ -3,5 +3,5 @@ pydbmonitor
 
 Distributed mysql database table statistics tool 
 
-Documantation (Turkish):
-[Turkish](http://github.com/ayder/pydbmonitor/dbmonitor.md)
+Documantation :
+[Turkish](https://github.com/ayder/pydbmonitor/blob/master/dbmonitor.md)
