@@ -20,9 +20,10 @@
 - Veritabanına bağlantı bilgileri ise **dbconfig.ini** dosyasından kolayca ulaşabiliyorsunuz.
     
  
-örnek kaynak.ini dosyası:
+örnek dbmonitor.ini dosyası:
 
-**[server]**  
+```config
+[server]  
 
 ; Kayitlarin saklanacagi lokal veritabani sunucusu
 [server]
@@ -40,6 +41,7 @@ cbtwo=10.10.10.56,dbmonuser,dbpasswd
 foydb=10.10.10.231,dbmonuser,dbpasswd
 pdfajans=10.10.10.54,dbmonuser,dbpasswd
 ht-db=10.10.10.193,dbmonuser,dbpasswd
+```
 
  
 ### Python2.7 ve Gereksinimler###
