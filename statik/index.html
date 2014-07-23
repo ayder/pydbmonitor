@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/statik/bootstrap.min.css" />
+    <script src="/statik/angular.min.js"></script>
+    <script type="text/javascript" src="/statik/app_ajax.js"></script>
+    </head>
+    <body class="container" ng-controller="StoreController" >
+       <table class="table table-condensed">
+		<thead>
+		<tr>
+		<th>#</th>
+		<th><a href="" ng-click="predicate = 'server_name'; reverse=!reverse">Server</a></th>
+		<th><a href="" ng-click="predicate = 'dbname'; reverse=!reverse">Database</a></th>
+		<th><a href="" ng-click="predicate = 'table_name'; reverse=!reverse">Table</a></th>
+		<th><a href="" ng-click="predicate = 'engine'; reverse=!reverse">Table Engine</a></th>
+		<th class="text-right"> <a href="" ng-click="predicate = 'row_count'; reverse=!reverse">Row Count</a></th>
+		<th class="text-right"><a href="" ng-click="predicate = 'row_size'; reverse=!reverse">Row Size (MB)</a></th>
+		<th class="text-center"><a href="" ng-click="predicate = 'create_options'; reverse=!reverse">Options</a></th>
+		</tr>
+		</thead>
+		<tbody>
+		
+       <tr class="product row" ng-repeat="tablo in tablolar |orderBy:predicate:reverse">
+		<td>{{ tablo.server_name }} </td>
+		<td>{{ tablo.dbname }} </td>
+		<td>{{ tablo.table_name }} </td>
+		<td>{{ tablo.engine }} </td>
+		<td class="text-right">{{ tablo.row_count | number:0 }} </td>
+		<td class="text-right">{{ tablo.row_size  | number:2 }} </td>
+		<td class="text-center">{{ tablo.create_options }} </td>
+		
+	</tr>
+	</table>
+
+ 
+    
+  </body>
+</html>
