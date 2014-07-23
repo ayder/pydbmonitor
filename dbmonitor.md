@@ -1,18 +1,12 @@
 ##Dagitik Veritabani Monitoru ##
 
-###Projede uygulanan Teknolojiler##
-> Angularjs 
-> Tornado  
-> Json  
-> python  
-> html5/bootstrapt  
-> MySql  
-
 ### dbmonitor.cron ###
 - Istenilen sürelerde çalışarak dbconfig.ini icinde belirtilmis sunucularda tüm veritabanlarından tablo durumlarını alır ve lokal veritabanına kaydeder
 
+
 ###Web Arayüzü##
-- [Sayfasının](http://dbmonitor.cbg:8888/) daha kullanıcı odaklı olmasını sağlanır. 
+- [Sayfasının](http://dbmonitor.host:8888/)  kullanıcı odaklı son rapor
+bilgilerini goruntuler olmasını sağlanır. 
 - Angularjs ile veri kaynağında olan değişiklik sayfanızdaki görünüme, görünümde olan değişiklik de,herhangi bir atama işlemleri olmadan veriye uygulanır.
 - Artık **controller** içerisinde arayüz nesnelerini kullanmadan işlerimizi gerçekleştirabiliyoruz.Ayrıca html içerisindeki elementleri hiyerarşik controller yapısıyla yönetebiliyorsunuz. Hangi elementlerin görünür, hangi elementlerin hangi koşullarda render edilecek olmasını, hangilerinin belirttiğiniz case lerde var olmasını küçücük attiribute ler ile ayarlayabiliyorsunuz.. (ng-app="gemStore" , ng-controller="StoreController")
 - Html taglarıyla yazılmış ve veritabanından alınmış bilgileri sayfadaki alan türlerinine göre sıralayabiliyorsunuz.
@@ -48,6 +42,14 @@ ht-db=10.10.10.193,dbmonuser,dbpasswd
 > - Jinja2==2.7.3  
 > - MySQL-python==1.2.5  
 > - tornado==3.2.2
+
+###Bunun dışında hakkını yememek lazım##
+> Angularjs 
+> Tornado  
+> Json  
+> python  
+> html5/bootstrapt  
+> MySql  
 
 
 
