@@ -2,7 +2,12 @@
 
 ### dbcount_cron.py ###
 - Istenilen sürelerde çalışarak dbconfig.ini icinde belirtilmis sunucularda tüm veritabanlarından tablo durumlarını alır ve lokal veritabanına kaydeder
+- crontab icerisinden istenilen surelerde calistirilir ve
+veritabanlarından kayıtlar toplanır
 
+```cron
+  45 2 * * * cd /srv/projectpath && python dbcount_cron.py
+```
 
 ###Web Arayüzü tornado_server.py##
 - [Sayfasının](http://dbmonitor.host:8888/)  kullanıcı odaklı son rapor
