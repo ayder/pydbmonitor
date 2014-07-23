@@ -1,10 +1,10 @@
 ##Dagitik Veritabani Monitoru ##
 
-### dbmonitor.cron ###
+### dbcount_cron.py ###
 - Istenilen sürelerde çalışarak dbconfig.ini icinde belirtilmis sunucularda tüm veritabanlarından tablo durumlarını alır ve lokal veritabanına kaydeder
 
 
-###Web Arayüzü##
+###Web Arayüzü tornado_server.py##
 - [Sayfasının](http://dbmonitor.host:8888/)  kullanıcı odaklı son rapor
 bilgilerini goruntuler olmasını sağlanır. 
 - Angularjs ile veri kaynağında olan değişiklik sayfanızdaki görünüme, görünümde olan değişiklik de,herhangi bir atama işlemleri olmadan veriye uygulanır.
